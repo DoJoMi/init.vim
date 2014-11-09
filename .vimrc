@@ -1,0 +1,131 @@
+" GENERAL
+syntax enable               " enable syntax processing
+let mapleader=","           " change the mapleader from \ to ,
+
+set hidden                  " hides buffers insted of closing
+set nowrap                  " don't wrap lines
+set number                  " show line numbers
+set cursorline              " highlight current line
+set autoindent              " always set autoindenting on
+set copyindent              " copy the previous indentation on autoindenting
+set tabstop=4               " number of visual spaces per TAB#
+set softtabstop=4           " number of spaces in tab when editing
+set expandtab               " tabs are spaces
+set encoding=utf-8          " utf8 default encoding
+set termencoding=utf-8
+set more                    " more like less
+set title                   " set title
+set t_Co=256                " use 265 colors
+set hlsearch                " highlight search results
+set incsearch               " show search matches as you type
+set nobackup                " no recover if vim crashes
+set noswapfile
+set shell=/bin/bash
+set cmdheight=2
+set visualbell              " don't beep
+set noerrorbells            " don't beep
+set nomodeline              " disable mode lines sec.
+let g:session_autoload = 'no'
+
+set nolist
+set listchars=tab:>.,trail:.,extends:#,nbsp:.,eol:¬ "highlight whitespaces
+autocmd filetype html,xml set listchars-=tab:>. "disable highlight for special files
+
+" VUNDLE PLUGIN MANAGER
+set nocompatible
+filetype off
+
+set rtp+=~/vimfiles/bundle/Vundle.vim
+:let g:session_autoload = 'no'
+call vundle#begin()
+
+" VundlePlugins
+" CORE
+Plugin 'gmarik/Vundle.vim'
+Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
+" find the right colorscheme @ 
+" http://bytefluent.com/vivify/
+
+" FILES
+Plugin 'kien/ctrlp.vim'         " use ctrl+p for file searching
+Plugin 'scrooloose/nerdtree'    " use :nerdtree
+Plugin 'mileszs/ack.vim'        " use ack-grep 
+
+" UTILITY
+" Plugin 'tpope/vim-surround'   " views
+" Snippet
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
+Plugin 'yegappan/mru'            " show most recently used files
+Plugin 'wincent/command-t'       " find current doc
+
+" MAIN
+Plugin 'xolox/vim-session'       " Session Management
+Plugin 'xolox/vim-misc'          " needed for Session Management
+Plugin 'sjl/gundo.vim'           " undo tree
+Plugin 'scrooloose/syntastic'    " code error handler
+Plugin 'Lokaltog/vim-easymotion' " easy search char 
+Plugin 'tomtom/tcomment_vim'     " comment with gcc or vjjjjgc or for block gcip
+Plugin 'bling/vim-airline'       " powerline alternative 
+
+" RARE IN USE
+Plugin 'nvie/vim-togglemouse'    " toogle the mouse with <F12>
+
+" Coding Vundles
+Plugin 'mattn/emmet-vim'              " zen coding
+Plugin 'pangloss/vim-javascript'      " js
+Plugin 'kchmck/vim-coffee-script'     " coffe-script
+Plugin 'davidhalter/jedi-vim'         " python autocompletion
+Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
+
+
+call vundle#end()
+filetype plugin indent on
+
+
+" CUSTOMIZATION
+
+colorscheme molokai "color
+
+nmap <F2> :NERDTreeToggle<CR>        " NERDTree
+nmap <F5> :GundoToggle<CR>           " Gundo
+
+
+"status line
+set laststatus=2
+set statusline=%#DiffDelete#\ %f\ %#DiffAdd#%m%r%h\ %w\ %y\ %=Line:\ %l\ Column:\ %c\ 
+
+"sudo permission files
+cmap w!! w !sudo tee % >/dev/null    
+
+" window
+map <Tab> <C-W>w
+map <Bar> <C-W>v<C-W><Right>
+map -     <C-Ws<C-W><Down>
+
+"fix indent
+map <F7> mzgg=G`z<CR>
+
+"NERDTree specific
+" Store the bookmarks file
+let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
+" Show the bookmarks table on startup
+let NERDTreeShowBookmarks=1
+" Show hidden files, too
+let NERDTreeShowFiles=1
+let NERDTreeShowHidden=1
+" Quit on opening files from the tree
+let NERDTreeQuitOnOpen=1
+" Highlight the selected entry in the tree
+let NERDTreeHighlightCursorline=1
+ " Use a single click to fold/unfold directories and a double click to open
+ " files
+let NERDTreeMouseMode=2
+ " Don't display these kinds of files
+let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
+ \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
+"  }}}
+
