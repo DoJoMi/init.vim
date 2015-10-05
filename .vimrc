@@ -29,7 +29,7 @@ let g:session_autoload = 'no'
 
 set nolist
 set listchars=tab:>.,trail:.,extends:#,nbsp:.,eol:¬ "highlight whitespaces
-autocmd filetype html,xml set listchars-=tab:>. "disable highlight for special files
+" autocmd filetype html,xml set listchars-=tab:>. "disable highlight for special files
 
 " VUNDLE PLUGIN MANAGER
 set nocompatible
