@@ -35,12 +35,16 @@ autocmd filetype html,xml set listchars-=tab:>. "disable highlight for special f
 set nocompatible
 filetype off
 
-set rtp+=~/vimfiles/bundle/Vundle.vim
-:let g:session_autoload = 'no'
+" old vundle configuration
+" set rtp+=~/vimfiles/bundle/Vundle.vim
+" :let g:session_autoload = 'no'
+" call vundle#begin()
+
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " VundlePlugins
-" CORE
+" CorePlugins
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
 " find the right colorscheme @ 
