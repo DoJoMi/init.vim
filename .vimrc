@@ -92,7 +92,7 @@ filetype plugin indent on
 
 " CUSTOMIZATION
 
-colorscheme molokai "color
+silent! colorscheme wombat "color
 
 nmap <F2> :NERDTreeToggle<CR>        " NERDTree
 nmap <F5> :GundoToggle<CR>           " Gundo
