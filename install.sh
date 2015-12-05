@@ -33,12 +33,12 @@ remove(){
 
 
 install() {
-		color " -->Install all relevant files..."
-		pause 'Press [Enter] key to continue...'
-		git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-		git clone https://github.com/DoJoMi/dotvim.git $HOME/.vim/.vim_rc
-		ln -s .vim/.vim_rc/.vimrc $HOME/.vimrc
-		vim +PluginInstall +qall
+	color " -->Install all relevant files..."
+	pause 'Press [Enter] key to continue...'
+	git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+	git clone https://github.com/DoJoMi/dotvim.git $HOME/.vim/.vim_rc
+	ln -s .vim/.vim_rc/.vimrc $HOME/.vimrc
+	vim +PluginInstall +qall
 }
 
 

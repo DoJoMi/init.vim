@@ -1,4 +1,5 @@
-#just do this
-```bash
-cd $HOME && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && git clone https://github.com/DoJoMi/dotvim.git && cp ~/dotvim/.vimrc ~/.vimrc && rm -rf ~/dotvim && vim +PluginInstall +qall
-```
+#installation
+bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -i
+
+#restore to old settings
+bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -r
