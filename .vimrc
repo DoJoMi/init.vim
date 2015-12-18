@@ -27,7 +27,7 @@ set noerrorbells            " don't beep
 set nomodeline              " disable mode lines sec.
 let g:session_autoload = 'no'
 
-set nolist
+set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.,eol:¬ "highlight whitespaces
 " autocmd filetype html,xml set listchars-=tab:>. "disable highlight for special files
 
