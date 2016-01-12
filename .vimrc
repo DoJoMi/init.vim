@@ -133,3 +133,6 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
  \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 "  }}}
 
+" save default editing session befor quitting
+let g:session_autosave = 'no'
+
