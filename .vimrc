@@ -53,38 +53,40 @@ Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
 " FILES
 Plugin 'kien/ctrlp.vim'         " use ctrl+p for file searching
 Plugin 'scrooloose/nerdtree'    " use :nerdtree
-Plugin 'mileszs/ack.vim'        " use ack-grep 
+Plugin 'mileszs/ack.vim'        " use ack-grep
 
 " UTILITY
-" Plugin 'tpope/vim-surround'   " views
+Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
+Plugin 'yegappan/mru'           " show most recently used files :MRU
+
 " Snippet
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plugin 'tomtom/tlib_vim' "used for snipmate
+Plugin 'garbas/vim-snipmate' "vim test.py !#->|
 Plugin 'honza/vim-snippets'
 
-Plugin 'yegappan/mru'            " show most recently used files
-Plugin 'wincent/command-t'       " find current doc
-
 " MAIN
-Plugin 'xolox/vim-session'       " Session Management
+Plugin 'xolox/vim-session'       " Session Management :SaveSession :OpenSession
 Plugin 'xolox/vim-misc'          " needed for Session Management
 Plugin 'sjl/gundo.vim'           " undo tree
-Plugin 'scrooloose/syntastic'    " code error handler
+Plugin 'scrooloose/syntastic'    " automatic code error handler
 Plugin 'Lokaltog/vim-easymotion' " easy search char 
 Plugin 'tomtom/tcomment_vim'     " comment with gcc or vjjjjgc or for block gcip
-Plugin 'bling/vim-airline'       " powerline alternative 
-
-" RARE IN USE
-Plugin 'nvie/vim-togglemouse'    " toogle the mouse with <F12>
+Plugin 'bling/vim-airline'       " powerline alternative
 
 " Coding Vundles
 Plugin 'mattn/emmet-vim'              " zen coding
 Plugin 'pangloss/vim-javascript'      " js
 Plugin 'kchmck/vim-coffee-script'     " coffe-script
 Plugin 'davidhalter/jedi-vim'         " python autocompletion
-Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
 
+" RARE IN USE
+Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
+
+"Others
+Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
+Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
+Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
 
 call vundle#end()
 filetype plugin indent on
