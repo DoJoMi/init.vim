@@ -43,7 +43,6 @@
 		Plugin 'xolox/vim-misc'          " needed for Session Management
 		Plugin 'sjl/gundo.vim'           " undo tree
 		Plugin 'scrooloose/syntastic'    " automatic code error handler
-		Plugin 'Lokaltog/vim-easymotion' " easy search char 
 		Plugin 'tomtom/tcomment_vim'     " comment with gcc or vjjjjgc or for block gcip
 		Plugin 'bling/vim-airline'       " powerline alternative
 		
