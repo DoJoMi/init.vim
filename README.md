@@ -3,6 +3,10 @@
 		-------------------------
 		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -i
 		
+		#installation problems while processing function 
+		@linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
+		@bsd   --> $ echo 'set shell=usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
+		
 		#restore to old settings
 		-------------------------
 		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -r
