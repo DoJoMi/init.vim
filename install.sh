@@ -41,15 +41,41 @@ install() {
 	vim +PluginInstall +qall
 }
 
+skel(){
+    if [ -d "$HOME/.vim" ]; then
+        color " --> Directory exists no new repo cloning..."
+        pause 'Press [Enter] key to continue copying files to /etc/skel...'
+        sudo -s cp -R $HOME/.vim $HOME/.vimrc /etc/skel
+        echo "***************************************"
+        echo "Now vim is available for all new created users"
+        echo "***************************************"
+    else
+        color " --> Clone repo .... "
+        git clone https://github.com/VundleVim/Vundle.vim.git /etc/skel/.vim/bundle/Vundle.vim
+	git clone https://github.com/DoJoMi/dotvim.git /etc/skel/.vim/.vim_rc
+        echo "***************************************"
+        echo "Now vim is available for all new created users"
+        echo "***************************************"
+    fi
+}
 
-while getopts "ir" opt; do
+
+
+
+while getopts "irs" opt; do
 	case $opt in
 	i)
 		logo
 		backup
 		install
 		;;
+	s)
+		logo
+		skel
+		;;
+
 	r)
+		logo
 		remove
 		;;
 	esac
