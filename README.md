@@ -2,6 +2,9 @@
 		#installation
 		-------------------------
 		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -i
+
+		#.vim_rc to /etc/skel to make it available for all new new created users
+		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -s
 		
 		#installation problems while processing function 
 		@linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
