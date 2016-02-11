@@ -8,7 +8,8 @@
 		
 		#installation problems while processing function 
 		@linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
-		@bsd   --> $ echo 'set shell=usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
+		@bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
+		and repeat $ vim +PluginInstall +qall
 		
 		#restore to old settings
 		-------------------------
