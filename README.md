@@ -6,6 +6,9 @@
 		#.vim_rc to /etc/skel to make it available for all new new created users
 		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -s
 		
+		or git clone https://github.com/DoJoMi/dotvim.git
+		cd ~/dotvim && ./install.sh --install
+		
 		#installation problems while processing function 
 		@linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
 		@bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
@@ -67,5 +70,5 @@
 		Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
 		Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 		Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
-		
+		Plugin 'rodjek/vim-puppet'            " puppet
 		
