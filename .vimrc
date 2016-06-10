@@ -86,6 +86,7 @@ Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
 Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
 Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
+Plugin 'rodjek/vim-puppet'            " puppet
 
 call vundle#end()
 filetype plugin indent on
@@ -136,4 +137,25 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
 
 " save default editing session befor quitting
 let g:session_autosave = 'no'
+
+" puppet-files
+au BufNewFile,BufRead *.pp set syntax=puppet
+au BufNewFile,BufRead *.pp setlocal tabstop=2
+au BufNewFile,BufRead *.pp setlocal shiftwidth=2
+au BufNewFile,BufRead *.pp setlocal noexpandtab
+au FileType puppet setlocal isk+=:
+au FileType puppet nnoremap <c-]> :exe "tag " . substitute(expand("<cword>"), "#
+au FileType puppet nnoremap <c-w><c-]> :tab split<CR>:exe "tag " . substitute(e#
+let g:syntastic_mode_map = { 'passive_filetypes': ['puppet']  } 
+let g:tagbar_type_puppet = {
+     \ 'ctagstype': 'puppet',
+     \ 'kinds': [
+        \'c:class',
+         \'s:site',
+         \'n:node',
+         \'d:definition'
+       \]
+     \}
+
+
 
