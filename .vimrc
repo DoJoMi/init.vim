@@ -88,6 +88,9 @@ Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
 Plugin 'rodjek/vim-puppet'            " puppet
 
+"Games
+Plugin 'jmanoel7/vim-games'
+
 call vundle#end()
 filetype plugin indent on
 
