@@ -57,6 +57,7 @@ Plugin 'mileszs/ack.vim'        " use ack-grep
 
 " UTILITY
 Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
+Plugin 'tpope/vim-fugitive'     " make git commits simpler
 Plugin 'yegappan/mru'           " show most recently used files :MRU
 
 " Snippet
