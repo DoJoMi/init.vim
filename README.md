@@ -18,6 +18,7 @@
 		-------------------------
 		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -r
 		
+		#main-settings
 		F2     --> NERDTree
 		F5     --> Gundo
 		F7     --> fix indent
@@ -26,6 +27,8 @@
 		w!!    --> write sudo premission files
 		ii     --> faster ESC
 		
+		git commands handled over tpope/vim-fugitive
+
 		-------------------------
 		Plugin Collection --> http://vimawesome.com
 		check out colorschemes --> http://bytefluent.com/vivify/
@@ -41,6 +44,7 @@
 
 		" UTILITY
 		Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
+		Plugin 'tpope/vim-fugitive'     " make git commits simpler
 		Plugin 'yegappan/mru'           " show most recently used files :MRU
 		
 		" Snippet
