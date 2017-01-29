@@ -102,7 +102,7 @@ silent! colorscheme wombat "color
 
 nmap <F2> :NERDTreeToggle<CR>        " NERDTree
 nmap <F5> :GundoToggle<CR>           " Gundo
-
+map <F8> :so%                        " reload vimrc
 
 "status line
 set laststatus=2
@@ -111,7 +111,7 @@ set statusline=%#DiffDelete#\ %f\ %#DiffAdd#%m%r%h\ %w\ %y\ %=Line:\ %l\ Column:
 "sudo permission files
 cmap w!! w !sudo tee % >/dev/null    
 
-" window
+"window
 map <Tab> <C-W>w
 map <Bar> <C-W>v<C-W><Right>
 map -     <C-Ws<C-W><Down>
