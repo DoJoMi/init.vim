@@ -22,6 +22,7 @@
 		F2     --> NERDTree
 		F5     --> Gundo
 		F7     --> fix indent
+                F8     --> reload vimrc
 		F12    --> toggle mouse
 		ctrl+p --> file searching
 		w!!    --> write sudo premission files
