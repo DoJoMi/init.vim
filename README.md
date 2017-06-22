@@ -35,6 +35,10 @@
 		check out colorschemes --> http://bytefluent.com/vivify/
 		-------------------------
 		
+		snippets are located under
+		~/.vim/after/snippets/_.snippets
+		-------------------------
+		
 		Other used plugins:
 		-------------------------
 		
@@ -49,9 +53,9 @@
 		Plugin 'yegappan/mru'           " show most recently used files :MRU
 		
 		" Snippet
-		Plugin 'MarcWeber/vim-addon-mw-utils'
-		Plugin 'tomtom/tlib_vim' "used for snipmate
-		Plugin 'garbas/vim-snipmate' "vim test.py !#->|
+		Plugin 'Shougo/neocomplete'     "used with CRTL+k
+		Plugin 'Shougo/neosnippet'
+		Plugin 'Shougo/neosnippet-snippets'
 		Plugin 'honza/vim-snippets'
 
 		" MAIN
@@ -76,4 +80,9 @@
 		Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 		Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
 		Plugin 'rodjek/vim-puppet'            " puppet
+		Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
+                Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
+
+                "Games
+                Plugin 'jmanoel7/vim-games'
 		
