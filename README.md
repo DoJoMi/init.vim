@@ -81,8 +81,8 @@
 		Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
 		Plugin 'rodjek/vim-puppet'            " puppet
 		Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
-                Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
+		Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
 
                 "Games
-                Plugin 'jmanoel7/vim-games'
+		Plugin 'jmanoel7/vim-games'
 		
