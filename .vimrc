@@ -61,10 +61,14 @@ Plugin 'tpope/vim-fugitive'     " make git commits simpler
 Plugin 'yegappan/mru'           " show most recently used files :MRU
 
 " Snippet
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim' "used for snipmate
-Plugin 'garbas/vim-snipmate' "vim test.py !#->|
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim' "used for snipmate
+" Plugin 'garbas/vim-snipmate' "vim test.py !#->|
 Plugin 'honza/vim-snippets'
+
+Plugin 'Shougo/neocomplete'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 
 " MAIN
 Plugin 'xolox/vim-session'       " Session Management :SaveSession :OpenSession
@@ -165,5 +169,19 @@ let g:tagbar_type_puppet = {
        \]
      \}
 
+"[neocomplete] Use tab to select a completion, Ctrl+K to expand a snippet,
+"Ctrl+H to close Neocomplete
+let g:neocomplete#enable_at_startup = 1
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <expr><TAB>
+ \ pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+inoremap <expr><C-h> pumvisible() ? "\<C-y>" : "\<C-h>"
+
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#snippets_directory='~/.vim/after/snippets/_.snippets'
 
 
