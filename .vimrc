@@ -83,6 +83,7 @@ Plugin 'mattn/emmet-vim'              " zen coding
 Plugin 'pangloss/vim-javascript'      " js
 Plugin 'kchmck/vim-coffee-script'     " coffe-script
 Plugin 'davidhalter/jedi-vim'         " python autocompletion
+Plugin 'fatih/vim-go'                 " go
 
 " RARE IN USE
 Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
