@@ -1,13 +1,13 @@
 	
 		#installation
 		-------------------------
-		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -i
+		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
 
 		#.vim_rc to /etc/skel to make it available for all new new created users
-		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -s
+		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -s
 		
-		or git clone https://github.com/DoJoMi/dotvim.git
-		cd ~/dotvim && ./install.sh --install
+		or git clone https://github.com/DoJoMi/init.vim.git
+		cd ~/init.vim && ./install.sh --install
 		
 		#installation problems while processing function 
 		@linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
@@ -16,7 +16,7 @@
 		
 		#restore to old settings
 		-------------------------
-		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/dotvim/master/install.sh) -r
+		bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 		
 		#main-settings
 		F2     --> NERDTree
