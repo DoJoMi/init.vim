@@ -47,6 +47,7 @@ call vundle#begin()
 " CorePlugins
 Plugin 'gmarik/Vundle.vim'
 Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
+Plugin 'nightsense/cosmic_latte'
 " find the right colorscheme @ 
 " http://bytefluent.com/vivify/
 
@@ -107,7 +108,9 @@ filetype plugin indent on
 
 " CUSTOMIZATION
 
-silent! colorscheme wombat "color
+" startup colorscheme
+" silent! colorscheme wombat "color
+silent! colorscheme cosmic_latte "color
 
 nmap <F2> :NERDTreeToggle<CR>        " NERDTree
 nmap <F5> :GundoToggle<CR>           " Gundo
