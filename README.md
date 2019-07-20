@@ -79,5 +79,7 @@ Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
 Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
 Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
-Plugin 'jmanoel7/vim-games'           "Games
+
+"Games
+Plugin 'jmanoel7/vim-games'
 ```
