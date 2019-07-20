@@ -90,10 +90,8 @@ Plugin 'fatih/vim-go'                 " go
 Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
 
 "Others
-Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
 Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
-Plugin 'rodjek/vim-puppet'            " puppet
 Plugin 'avakhov/vim-yaml'             " vim-yaml
 Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
 Plugin 'nginx.vim'                    " nginx synthax
