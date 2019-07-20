@@ -6,19 +6,22 @@ bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.
 #.vim_rc to /etc/skel to make it available for all new new created users
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -s
 
-or git clone https://github.com/DoJoMi/init.vim.git
+# or you can clone it as well
+git clone https://github.com/DoJoMi/init.vim.git
 cd ~/init.vim && ./install.sh --install
-
 #installation problems while processing function 
-@linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
-@bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
-and repeat $ vim +PluginInstall +qall
+# @linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
+# @bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
+# and afterwards repeat $ vim +PluginInstall +qall
 
-#restore to old settings
+#restore to old basic settings
 -------------------------
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 
-#main-settings
+# optimized 
+# git commands handled over tpope/vim-fugitive
+
+-------------------------
 F2     --> NERDTree
 F5     --> Gundo
 F7     --> fix indent
@@ -28,23 +31,22 @@ ctrl+p --> file searching
 w!!    --> write sudo premission files
 ii     --> faster ESC
 
-git commands handled over tpope/vim-fugitive
 -------------------------
-Plugin Collection --> http://vimawesome.com
+Plugin Collection      --> http://vimawesome.com
 check out colorschemes --> http://bytefluent.com/vivify/
--------------------------
 
-snippets are located under
+-------------------------
+# snippets are located under
 ~/.vim/after/snippets/_.snippets
--------------------------
 
-Other used plugins:
 -------------------------
+# Other used plugins:
 
 " FILES
 Plugin 'kien/ctrlp.vim'         " use ctrl+p for file searching
 Plugin 'scrooloose/nerdtree'    " use :nerdtree
 Plugin 'mileszs/ack.vim'        " use ack-grep 
+
 " UTILITY
 Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
 Plugin 'tpope/vim-fugitive'     " make git commits simpler
@@ -73,10 +75,8 @@ Plugin 'davidhalter/jedi-vim'         " python autocompletion
 Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
 
 " Others
-Plugin 'PotatoesMaster/i3-vim-syntax' " i3-synthax
 Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
-Plugin 'rodjek/vim-puppet'            " puppet
 Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
 Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
 Plugin 'jmanoel7/vim-games'           "Games
