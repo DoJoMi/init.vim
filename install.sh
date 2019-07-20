@@ -1,6 +1,6 @@
 #!/bin/sh
 
-logo(){
+function logo(){
 	echo -e '
  ____  _____    __ _____ _____ _____ 
 |    \|     |__|  |     |     |     |
@@ -10,21 +10,21 @@ powerded by
 '
 }
 
-color() {
+function color() {
 	printf '\033[0;31m%s\033[0m\n' "$1"
 }
 
-pause(){
+function pause(){
    read -p "$*"
 }
 
-backup() {
+function backup() {
 	if [ -e "$HOME/.vimrc" ]; then
 	  mv $HOME/.vimrc $HOME/.vimrc.bak
 	fi
 }
 
-remove(){
+function remove(){
 	color " --> Restore to old .vimrc..."
 	pause 'Press [Enter] key to continue...'
 	rm -rf $HOME/.vim $HOME/.vimrc $HOME/.viminfo
@@ -32,7 +32,7 @@ remove(){
 }
 
 
-install() {
+function install() {
 	color " -->Install all relevant files..."
 	pause 'Press [Enter] key to continue...'
 	git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
@@ -41,7 +41,7 @@ install() {
 	vim +PluginInstall +qall
 }
 
-skel(){
+function skel(){
     if [ -d "$HOME/.vim" ]; then
         color " --> Directory exists no new repo cloning..."
         pause 'Press [Enter] key to continue copying files to /etc/skel...'
