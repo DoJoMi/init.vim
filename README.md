@@ -15,6 +15,7 @@ cd ~/init.vim && ./install.sh --install
 
 ### switching from vim to neovim
 ```shell
+export EDITOR="nvim"
 mkdir ~/.config/nvim/
 cat > ~/.config/nvim/init.vim <<EOF
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
