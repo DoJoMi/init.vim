@@ -82,9 +82,6 @@ Plugin 'tomtom/tcomment_vim'     " comment with gcc or vjjjjgc or for block gcip
 Plugin 'bling/vim-airline'       " powerline alternative
 
 " Coding Vundles
-Plugin 'mattn/emmet-vim'              " zen coding
-Plugin 'pangloss/vim-javascript'      " js
-Plugin 'kchmck/vim-coffee-script'      " coffe-script
 Plugin 'davidhalter/jedi-vim'         " python autocompletion
 
 " RARE IN USE
