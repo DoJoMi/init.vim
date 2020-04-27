@@ -83,15 +83,18 @@ Plugin 'bling/vim-airline'       " powerline alternative
 
 " Coding Vundles
 Plugin 'davidhalter/jedi-vim'         " python autocompletion
+Plugin 'fatih/vim-go'                 " go
 
 " RARE IN USE
 Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
 
-" Others
+"Others
 Plugin 'ekalinin/Dockerfile.vim'       " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
-Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
+Plugin 'avakhov/vim-yaml'             " vim-yaml
 Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
+Plugin 'nginx.vim'                    " nginx synthax
+Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
 
 "Games
 Plugin 'jmanoel7/vim-games'
