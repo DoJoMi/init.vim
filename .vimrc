@@ -105,7 +105,7 @@ filetype plugin indent on
 " CUSTOMIZATION
 
 " colorscheme
-:highlight Normal ctermfg=grey ctermbg=darkblue
+highlight Normal ctermfg=grey ctermbg=darkblue
 silent ! colorscheme gruvbox
 
 nmap <F2> :NERDTreeToggle<CR>        " NERDTree
