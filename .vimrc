@@ -106,7 +106,7 @@ filetype plugin indent on
 
 " colorscheme
 highlight Normal ctermfg=grey ctermbg=darkblue
-silent ! colorscheme gruvbox
+colorscheme gruvbox
 
 nmap <F2> :NERDTreeToggle<CR>        " NERDTree
 nmap <F5> :GundoToggle<CR>           " Gundo
