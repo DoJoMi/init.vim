@@ -99,3 +99,13 @@ Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
 "Games
 Plugin 'jmanoel7/vim-games'
 ```
+
+```
+Plugin 'Valloric/YouCompleteMe'
+:python import sys; print(sys.version)
+vim --version
+# +python3/dyn
+yay -S cmake
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --all
+```
