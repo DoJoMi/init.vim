@@ -73,6 +73,7 @@ Plugin 'Shougo/neocomplete'     "used with CRTL+k
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'honza/vim-snippets'
+
 " MAIN
 Plugin 'xolox/vim-session'       " Session Management :SaveSession :OpenSession
 Plugin 'xolox/vim-misc'          " needed for Session Management
