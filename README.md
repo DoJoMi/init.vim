@@ -108,5 +108,6 @@ vim --version
 # +python3/dyn
 yay -S cmake
 cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
 python3 install.py --all
 ```
