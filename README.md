@@ -111,17 +111,3 @@ cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 python3 install.py --all
 ```
-
-##### using vim as go-ide with usefull tools
-```shell
-# goimports
-go get -u golang.org/x/tools/cmd/goimports
-# gocode
-go get -u github.com/nsf/gocode
-# godef
-go get -u github.com/rogpeppe/godef
-# golint
-go get -u github.com/golang/lint/golint
-# errcheck
-go get -u github.com/kisielk/errcheck
-```
