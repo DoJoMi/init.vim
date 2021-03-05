@@ -1,4 +1,4 @@
-### installation
+### Installation
 ```shell
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
 #.vim_rc to /etc/skel to make it available for all new new created users
@@ -13,7 +13,7 @@ cd ~/init.vim && ./install.sh --install
 # and afterwards repeat $ vim +PluginInstall +qall
 ```
 
-### switching from vim to neovim
+### Switching from Vim to Neovim
 ```shell
 export EDITOR="nvim"
 mkdir ~/.config/nvim/
@@ -24,17 +24,17 @@ source ~/.vimrc
 EOF
 ```
 
-### restore to old basic settings
+### Restore to old basic settings
 ```shell
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 ```
 
-### git-commands
+### Git-commands
 ```shell
 git commands handled over tpope/vim-fugitive plugin
 ```
 
-### optimized shortcuts
+### Optimized shortcuts
 ```shell
 F2     --> NERDTree
 F5     --> Gundo
@@ -46,12 +46,12 @@ w!!    --> write sudo premission files
 ii     --> faster ESC
 ```
 
-### snippet location
+### Snippet location
 ```shell
 ~/.vim/after/snippets/_.snippets
 ```
 
-### Plugins-Collection:
+### Plugins Collection
 
 ```shell
 
