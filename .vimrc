@@ -83,6 +83,7 @@ Plugin 'bling/vim-airline'       " powerline alternative
 " Coding Vundles
 Plugin 'davidhalter/jedi-vim'         " python autocompletion
 Plugin 'fatih/vim-go'                 " go
+Plugin 'google/vim-jsonnet'           " jsonnet
 
 " RARE IN USE
 Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
