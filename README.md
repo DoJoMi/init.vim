@@ -104,6 +104,7 @@ Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
 Plugin 'jmanoel7/vim-games'
 ```
 
+### Use YouCompleteMe instead of neocomplete
 ```shell
 Plugin 'Valloric/YouCompleteMe'
 :python import sys; print(sys.version)
