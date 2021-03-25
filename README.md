@@ -4,10 +4,11 @@ bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.
 #.vim_rc to /etc/skel to make it available for all new new created users
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -s
 
-# or you can clone it as well
+# or clone it
 git clone https://github.com/DoJoMi/init.vim.git
 cd ~/init.vim && ./install.sh --install
-#installation problems while processing function 
+
+# installation problems while function processing
 # @linux --> $ echo 'set shell=/bin/bash' >> .vim/.vim_rc/.vimrc
 # @bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
 # and afterwards repeat $ vim +PluginInstall +qall
@@ -29,12 +30,12 @@ EOF
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 ```
 
-### Git-commands
+### Git commands
 ```shell
 git commands handled over tpope/vim-fugitive plugin
 ```
 
-### Optimized shortcuts
+### Optimized vim shortcuts
 ```shell
 F2     --> NERDTree
 F5     --> Gundo
