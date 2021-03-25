@@ -15,6 +15,10 @@ cd ~/init.vim && ./install.sh --install
 # @bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
 # and afterwards repeat $ vim +PluginInstall +qall
 ```
+### Restore to old basic settings
+```shell
+bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
+```
 
 ### Switching from Vim to Neovim
 ```shell
@@ -25,11 +29,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vimrc
 EOF
-```
-
-### Restore to old basic settings
-```shell
-bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 ```
 
 ### Git commands
