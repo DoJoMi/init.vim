@@ -1,7 +1,9 @@
 ### Installation
 ```shell
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
-#.vim_rc to /etc/skel to make it available for all new new created users
+
+# to make the vim configuration available for all new new created users
+# .vim_rc to /etc/skel 
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -s
 
 # or clone it
