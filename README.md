@@ -15,7 +15,7 @@ cd ~/init.vim && ./install.sh --install
 # @bsd   --> $ echo 'set shell=/usr/local/bin/bash' >> .vim/.vim_rc/.vimrc
 # and afterwards repeat $ vim +PluginInstall +qall
 ```
-### Restore to old basic settings
+### Restore settings
 ```shell
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 ```
