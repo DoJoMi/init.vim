@@ -3,7 +3,7 @@
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
 
 # to make the vim configuration available for all new new created users
-# .vim_rc to /etc/skel 
+# .vimrc will be copied to /etc/skel 
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -s
 
 # or clone it
