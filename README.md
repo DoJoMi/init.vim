@@ -106,11 +106,14 @@ Plugin 'jmanoel7/vim-games'
 
 ### Use YouCompleteMe instead of neocomplete
 ```shell
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
+:source ~/.vimrc
 :python import sys; print(sys.version)
 vim --version | grep +python3/dyn
 paru -S cmake
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 python3 install.py --all
+:PluginInstall
+:YcmRestartServer
 ```
