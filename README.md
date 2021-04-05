@@ -19,7 +19,7 @@ cd ~/init.vim && ./install.sh --install
 ```shell
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 ```
-
+cmake gcc
 ### Switching from Vim to Neovim
 ```shell
 export EDITOR="nvim"
@@ -110,9 +110,12 @@ Plugin 'ycm-core/YouCompleteMe'
 :source ~/.vimrc
 :python import sys; print(sys.version)
 vim --version | grep +python3/dyn
-paru -S cmake
+paru -S cmake gcc
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
+# just install specigic language support
+python3 install.py  --go-completer --java-completer --clangd-completer
+# or install all language support
 python3 install.py --all
 :PluginInstall
 :YcmRestartServer
