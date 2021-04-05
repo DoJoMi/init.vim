@@ -109,7 +109,7 @@ Plugin 'jmanoel7/vim-games'
 Plugin 'Valloric/YouCompleteMe'
 :python import sys; print(sys.version)
 vim --version | grep +python3/dyn
-yay -S cmake
+paru -S cmake
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 python3 install.py --all
