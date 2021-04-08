@@ -127,9 +127,13 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/after/snippets/_.snippets'
 ```
 
-### Use YouCompleteMe
+### Use YouCompleteMe+SuperTab+UltiSnip
 ```shell
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 :source ~/.vimrc
 :python import sys; print(sys.version)
 vim --version | grep +python3/dyn
@@ -142,13 +146,7 @@ python3 install.py  --go-completer --java-completer --clangd-completer
 python3 install.py --all
 :PluginInstall
 :YcmRestartServer
-```
 
-### Use YouCompleteMe+SuperTab+UltiSnip
-```shell
-Plugin 'ervandew/supertab'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 
 let g:SuperTabDefaultCompletionType = '<C-n>'
 "let g:SuperTabCrMapping                = 0
