@@ -70,11 +70,9 @@ Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
 Plugin 'tpope/vim-fugitive'     " make git commits simpler
 Plugin 'yegappan/mru'           " show most recently used files :MRU
 
-" Snippets
+" SNIPPETS / COMPLETION
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
-
-" YouCompleteMeSuperTab
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'ervandew/supertab'
 
