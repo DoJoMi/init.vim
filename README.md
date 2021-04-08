@@ -70,11 +70,13 @@ Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
 Plugin 'tpope/vim-fugitive'     " make git commits simpler
 Plugin 'yegappan/mru'           " show most recently used files :MRU
 
-" Snippet
-Plugin 'Shougo/neocomplete'     "used with CRTL+k
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+" Snippets
 Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+
+" YouCompleteMeSuperTab
+Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ervandew/supertab'
 
 " MAIN
 Plugin 'xolox/vim-session'       " Session Management :SaveSession :OpenSession
