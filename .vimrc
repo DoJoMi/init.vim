@@ -66,11 +66,11 @@ Plugin 'yegappan/mru'           " show most recently used files :MRU
 " Plugin 'MarcWeber/vim-addon-mw-utils'
 " Plugin 'tomtom/tlib_vim' "used for snipmate
 " Plugin 'garbas/vim-snipmate' "vim test.py !#->|
-Plugin 'honza/vim-snippets'
 
-Plugin 'Shougo/neocomplete'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
+Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " MAIN
 Plugin 'xolox/vim-session'       " Session Management :SaveSession :OpenSession
@@ -151,38 +151,14 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
 " save default editing session befor quitting
 let g:session_autosave = 'no'
 
-" puppet-files
-au BufNewFile,BufRead *.pp set syntax=puppet
-au BufNewFile,BufRead *.pp setlocal tabstop=2
-au BufNewFile,BufRead *.pp setlocal shiftwidth=2
-au BufNewFile,BufRead *.pp setlocal noexpandtab
-au FileType puppet setlocal isk+=:
-au FileType puppet nnoremap <c-]> :exe "tag " . substitute(expand("<cword>"), "#
-au FileType puppet nnoremap <c-w><c-]> :tab split<CR>:exe "tag " . substitute(e#
-let g:syntastic_mode_map = { 'passive_filetypes': ['puppet']  } 
-let g:tagbar_type_puppet = {
-     \ 'ctagstype': 'puppet',
-     \ 'kinds': [
-        \'c:class',
-         \'s:site',
-         \'n:node',
-         \'d:definition'
-       \]
-     \}
 
-"[neocomplete] Use tab to select a completion, Ctrl+K to expand a snippet,
-"Ctrl+H to close Neocomplete
-let g:neocomplete#enable_at_startup = 1
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-imap <expr><TAB>
- \ pumvisible() ? "\<C-n>" :
- \ neosnippet#expandable_or_jumpable() ?
- \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-inoremap <expr><C-h> pumvisible() ? "\<C-y>" : "\<C-h>"
+let g:SuperTabDefaultCompletionType = '<C-n>'
+"let g:SuperTabCrMapping                = 0
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:ycm_key_list_select_completion = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 
-let g:neosnippet#enable_snipmate_compatibility = 1
-let g:neosnippet#snippets_directory='~/.vim/after/snippets/_.snippets'
-
-
+let g:UltiSnipsSnippetsDir = '~/.vim/ultisnips'
+let g:UltiSnipsSnippetDirectories = ['ultisnips']
