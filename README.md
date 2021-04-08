@@ -104,6 +104,29 @@ Plugin 'hashivim/vim-hashicorp-tools' " hashicorp-toolset synthax
 Plugin 'jmanoel7/vim-games'
 ```
 
+### Use Neocomplete
+```shell
+Plugin 'Shougo/neocomplete'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'honza/vim-snippets'
+
+"[neocomplete] Use tab to select a completion, Ctrl+K to expand a snippet,
+"Ctrl+H to close Neocomplete
+let g:neocomplete#enable_at_startup = 1
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <expr><TAB>
+ \ pumvisible() ? "\<C-n>" :
+ \ neosnippet#expandable_or_jumpable() ?
+ \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+inoremap <expr><C-h> pumvisible() ? "\<C-y>" : "\<C-h>"
+
+let g:neosnippet#enable_snipmate_compatibility = 1
+let g:neosnippet#snippets_directory='~/.vim/after/snippets/_.snippets'
+```
+
 ### Use YouCompleteMe instead of neocomplete
 ```shell
 Plugin 'ycm-core/YouCompleteMe'
