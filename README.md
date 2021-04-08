@@ -127,7 +127,7 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#snippets_directory='~/.vim/after/snippets/_.snippets'
 ```
 
-### Use YouCompleteMe instead of neocomplete
+### Use YouCompleteMe
 ```shell
 Plugin 'ycm-core/YouCompleteMe'
 :source ~/.vimrc
