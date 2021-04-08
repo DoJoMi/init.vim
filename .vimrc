@@ -46,11 +46,12 @@ call vundle#begin()
 " VundlePlugins
 " CorePlugins
 Plugin 'gmarik/Vundle.vim'
-Plugin 'morhetz/gruvbox'
-"Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
-"Plugin 'nightsense/cosmic_latte'
+" Plugin 'morhetz/gruvbox'
+" Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
+" Plugin 'nightsense/cosmic_latte'
 " find the right colorscheme @ 
 " http://bytefluent.com/vivify/
+Plugin 'ayu-theme/ayu-vim' " or other package manager
 
 " FILES
 Plugin 'kien/ctrlp.vim'         " use ctrl+p for file searching
@@ -102,8 +103,14 @@ filetype plugin indent on
 " CUSTOMIZATION
 
 " colorscheme
-highlight Normal ctermfg=grey ctermbg=darkblue
-colorscheme gruvbox
+" highlight Normal ctermfg=grey ctermbg=darkblue
+" colorscheme gruvbox
+
+set termguicolors     " enable true colors support
+" let ayucolor="light"  " for light version of theme
+let ayucolor="mirage" " for mirage version of theme
+" let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
 
 nmap <F2> :NERDTreeToggle<CR>        " NERDTree
 nmap <F5> :GundoToggle<CR>           " Gundo
