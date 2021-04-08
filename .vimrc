@@ -62,15 +62,11 @@ Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
 Plugin 'tpope/vim-fugitive'     " make git commits simpler
 Plugin 'yegappan/mru'           " show most recently used files :MRU
 
-" Snippet
-" Plugin 'MarcWeber/vim-addon-mw-utils'
-" Plugin 'tomtom/tlib_vim' "used for snipmate
-" Plugin 'garbas/vim-snipmate' "vim test.py !#->|
-
+" SNIPPETS / COMPLETION
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'ervandew/supertab'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 
 " MAIN
 Plugin 'xolox/vim-session'       " Session Management :SaveSession :OpenSession
