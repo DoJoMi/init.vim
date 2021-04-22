@@ -25,6 +25,7 @@ set cmdheight=2
 set visualbell              " don't beep
 set noerrorbells            " don't beep
 set nomodeline              " disable mode lines sec.
+" set completeopt-=preview    " disable the YouCompleteMe preview
 let g:session_autoload = 'no'
 
 set list
