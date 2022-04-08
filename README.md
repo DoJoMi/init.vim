@@ -57,8 +57,8 @@ ii     --> faster ESC
 
 ```shell
 
-Plugin Collection      --> http://vimawesome.com
-check out colorschemes --> http://bytefluent.com/vivify/
+Plugin Collection      --> https://vimawesome.com
+check out colorschemes --> https://bytefluent.com/vivify/
 
 " VundlePlugins
 " CorePlugins
