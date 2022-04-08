@@ -60,15 +60,26 @@ ii     --> faster ESC
 Plugin Collection      --> http://vimawesome.com
 check out colorschemes --> http://bytefluent.com/vivify/
 
+" VundlePlugins
+" CorePlugins
+Plugin 'gmarik/Vundle.vim'
+" Plugin 'morhetz/gruvbox'
+" Plugin 'flazz/vim-colorschemes' " :colorscheme wombat
+" Plugin 'nightsense/cosmic_latte'
+" find the right colorscheme @ 
+" http://bytefluent.com/vivify/
+Plugin 'ayu-theme/ayu-vim' " or other package manager
+
 " FILES
 Plugin 'kien/ctrlp.vim'         " use ctrl+p for file searching
 Plugin 'scrooloose/nerdtree'    " use :nerdtree
-Plugin 'mileszs/ack.vim'        " use ack-grep 
+Plugin 'mileszs/ack.vim'        " use ack-grep
 
 " UTILITY
 Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
 Plugin 'tpope/vim-fugitive'     " make git commits simpler
 Plugin 'yegappan/mru'           " show most recently used files :MRU
+Plugin 'psliwka/vim-smoothie'   " smooth scrolling
 
 " SNIPPETS / COMPLETION
 Plugin 'honza/vim-snippets'
@@ -93,7 +104,7 @@ Plugin 'google/vim-jsonnet'           " jsonnet
 Plugin 'nvie/vim-togglemouse'         " toogle the mouse with <F12>
 
 "Others
-Plugin 'ekalinin/Dockerfile.vim'       " docker-synthax
+Plugin 'ekalinin/Dockerfile.vim'      " docker-synthax
 Plugin 'chase/vim-ansible-yaml'       " ansible-synthax
 Plugin 'avakhov/vim-yaml'             " vim-yaml
 Plugin 'andrewstuart/vim-kubernetes'  " kubernetes synthax
