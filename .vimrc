@@ -58,6 +58,7 @@ Plugin 'ayu-theme/ayu-vim' " or other package manager
 Plugin 'kien/ctrlp.vim'         " use ctrl+p for file searching
 Plugin 'scrooloose/nerdtree'    " use :nerdtree
 Plugin 'mileszs/ack.vim'        " use ack-grep
+Plugin 'voldikss/vim-floaterm'  " terminal
 
 " UTILITY
 Plugin 'tpope/vim-surround'     " cst<div> cs"* ds" dst yss"
