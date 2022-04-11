@@ -119,6 +119,11 @@ nmap <F2> :NERDTreeToggle<CR>        " NERDTree
 nmap <F5> :GundoToggle<CR>           " Gundo
 map <F8> :so%                        " reload vimrc
 
+" terminal
+let g:floaterm_keymap_toggle = '<F12>'
+let g:floaterm_width = 0.9
+let g:floaterm_height = 0.9
+
 "status line
 set laststatus=2
 set statusline=%#DiffDelete#\ %f\ %#DiffAdd#%m%r%h\ %w\ %y\ %=Line:\ %l\ Column:\ %c\ 
@@ -156,7 +161,6 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
 
 " save default editing session befor quitting
 let g:session_autosave = 'no'
-
 
 let g:SuperTabDefaultCompletionType = '<C-n>'
 "let g:SuperTabCrMapping                = 0
