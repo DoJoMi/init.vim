@@ -1,5 +1,15 @@
 ### Installation
 ```shell
+
+#rocky
+yum  install  ncurses-devel
+wget https://github.com/vim/vim/archive/master.zip	
+unzip master.zip
+cd vim-master/src/
+./configure
+make
+sudo make install
+
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
 
 # to make the vim configuration available for all new new created users
