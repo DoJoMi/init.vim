@@ -1,14 +1,8 @@
 ### Installation
 ```shell
-
-#rocky
-yum  install  ncurses-devel
-wget https://github.com/vim/vim/archive/master.zip	
-unzip master.zip
-cd vim-master/src/
+cd /tmp && git clone https://github.com/vim/vim.git && cd vim
 ./configure --prefix=/usr --with-features=huge --enable-pythoninterp --enable-multibyte
-make
-sudo make install
+make && sudo make install
 
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
 
