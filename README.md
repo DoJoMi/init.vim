@@ -6,7 +6,7 @@ yum  install  ncurses-devel
 wget https://github.com/vim/vim/archive/master.zip	
 unzip master.zip
 cd vim-master/src/
-./configure
+./configure --prefix=/usr --with-features=huge --enable-pythoninterp --enable-multibyte
 make
 sudo make install
 
