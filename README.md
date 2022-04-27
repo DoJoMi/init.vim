@@ -159,9 +159,9 @@ cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 # just install specigic language support
 python3 install.py  --go-completer --java-completer --clangd-completer
-# or install all language support
 # sudo dnf install python-devel gcc-c++ npm
 # golang: https://developer.fedoraproject.org/tech/languages/go/go-installation.html
+# go get golang.org/x/tools/gopls@latest
 python3 install.py --all
 :PluginInstall
 :YcmRestartServer
