@@ -160,7 +160,7 @@ git submodule update --init --recursive
 # just install specigic language support
 python3 install.py  --go-completer --java-completer --clangd-completer
 # or install all language support
-# sudo dnf install python-devel
+# sudo dnf install python-devel gcc-c++
 python3 install.py --all
 :PluginInstall
 :YcmRestartServer
