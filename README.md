@@ -161,6 +161,7 @@ git submodule update --init --recursive
 python3 install.py  --go-completer --java-completer --clangd-completer
 # or install all language support
 # sudo dnf install python-devel gcc-c++
+# golang: https://developer.fedoraproject.org/tech/languages/go/go-installation.html
 python3 install.py --all
 :PluginInstall
 :YcmRestartServer
