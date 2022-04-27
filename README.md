@@ -3,6 +3,7 @@
 cd /tmp && git clone https://github.com/vim/vim.git && cd vim
 ./configure --prefix=/usr --with-features=huge --enable-pythoninterp --enable-multibyte
 make && sudo make install
+# vim --version | grep +python3/dyn
 
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -i
 
