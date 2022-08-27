@@ -154,7 +154,7 @@ Plugin 'honza/vim-snippets'
 :source ~/.vimrc
 :python import sys; print(sys.version)
 vim --version | grep +python3/dyn
-paru -S cmake gcc
+paru -S cmake gcc npm
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 # just install specigic language support
