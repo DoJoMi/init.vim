@@ -24,7 +24,6 @@ cd ~/init.vim && ./install.sh --install
 ```shell
 bash <(curl -L https://raw.githubusercontent.com/DoJoMi/init.vim/master/install.sh) -r
 ```
-cmake gcc
 ### Switching from Vim to Neovim
 ```shell
 export EDITOR="nvim"
