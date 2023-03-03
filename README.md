@@ -157,15 +157,20 @@ vim --version | grep +python3/dyn
 paru -S cmake gcc npm
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
+
 # just install specigic language support
 python3 install.py  --go-completer --java-completer --clangd-completer
 # sudo dnf install python-devel gcc-c++ npm
 # golang: https://developer.fedoraproject.org/tech/languages/go/go-installation.html
 # go get golang.org/x/tools/gopls@latest
+
+# run it as root-user
+# dnf install python3-devel
+# /usr/bin/python3 /root/.vim/bundle/YouCompleteMe/third_party/ycmd/build.py --all --force-sudo --verbose
+
 python3 install.py --all
 :PluginInstall
 :YcmRestartServer
-
 
 let g:SuperTabDefaultCompletionType = '<C-n>'
 "let g:SuperTabCrMapping                = 0
